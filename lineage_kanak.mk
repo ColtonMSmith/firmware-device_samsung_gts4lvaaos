@@ -11,6 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 $(call inherit-product, device/amazon/karnak/device.mk)
+# Inherit Snapp modifications
+$(call inherit-product, device/snappautomotive/common/additions.mk)
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Inherit the car stuff
+$(call inherit-product, device/samsung/gts4lv/car.mk)
+
 
 # Inherit go optimizations for karnak
 $(call inherit-product, device/amazon/karnak/go_opt.mk)
