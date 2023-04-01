@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=gts4lv
+export DEVICE=karnak
 export DEVICE_COMMON=gts4lv-common
-export VENDOR=samsung
+export VENDOR=amazon
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
